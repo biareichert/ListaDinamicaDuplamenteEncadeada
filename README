@@ -1,0 +1,37 @@
+Equipe: Beatriz B. Martins, Beatriz M. Reichert, Karine A. Córdova
+Atividade: Implementação de uma Lista Dinâmica Duplamente Encadeada
+
+Dado que não foi especificado uma máquina para testar a implementação, nós utilizamos 
+a ens1. O código está executando sem problemas.
+Nós desenvolvemos uma aplicação genérica que tem como objetivo fazer uso de todas as
+funções implementadas para a lista.
+
+Primeiramente são inseridos 9 itens na lista por meio de um for. Neste for, quando a 
+variável "i" for um número par, será inserida uma nota na lista (começando em 10 e 
+terminando em 6), essa inserção ocorre no início da lista. Quando a variável "i" for 
+ímpar será inserido um conceito na lista (começando com "a" e terminando com "d"), essa
+inserção ocorre no fim da lista. Em seguinda, após o término do laço for é inserida uma 
+nota (8.5) na posição 2 da lista. Dessa forma teremos a seguinte sequencia: 6, 7, 8.5, 8, 
+9, 10, a, b, c, d.
+
+Em seguinda é realizada a busca na posição 2, esta irá retornar o valor 8.5. Após essa
+busca, o valor da posição 2 é removido da lista. Logo, a lista ficará da seguinte forma:
+6, 7, 8, 9, 10, a, b, c, d.
+
+Então, para confirmar os dados presentes na lista é realizada uma busca no início e outra
+no fim da lista.
+
+Em seguinda é realizado um laço for para remover 5 elementos do início da lista. A lista
+terá então a seguinte sequencia: a, b, c, d. Os valores removidos foram 6,7,8,9,10, nesta 
+mesma sequencia, dado que foi utilizada a função removeDoInicio().
+
+Novamente é realizada a busca no início e no fim da lista.
+
+Por fim, é feita a remoção dos elementos restantes na lista, partindo do fim. Os valores 
+removidos foram: d,c,b,a, nesta mesma sequencia, dado que foi utilizada a função removeDoFim().
+
+
+Comando para executar na máquina ens1:
+    gcc -Wall -o exec Aplicacao.c LDDE.c
+    ./exec
+
